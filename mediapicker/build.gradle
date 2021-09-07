@@ -10,16 +10,16 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 version = "3.3" //发布版本号
 group = "com.dmcBig" //最终引用形式，如compile 'com.**;
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion 30
         versionCode 1
         versionName "3.3"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
     }
     buildTypes {
@@ -31,15 +31,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.github.bumptech.glide:glide:4.0.0'
-    compile 'com.android.support:support-v4:25.3.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.fragment:fragment:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
-    compile 'pub.devrel:easypermissions:1.0.0'
-    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    implementation 'pub.devrel:easypermissions:1.0.0'
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
 }
 
 bintray {

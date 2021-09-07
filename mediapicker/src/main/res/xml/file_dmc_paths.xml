@@ -2,5 +2,6 @@
 <resources>
     <paths>
         <root-path name="dmcpic" path="" />
+        <external-path name="external_files" path="."/>
     </paths>
 </resources>
