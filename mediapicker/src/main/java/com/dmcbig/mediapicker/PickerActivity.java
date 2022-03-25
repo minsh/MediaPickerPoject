@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -53,10 +54,14 @@ public class PickerActivity extends Activity implements DataCallback, View.OnCli
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        Log.d("🔥", "~~~");
         super.onCreate(savedInstanceState);
         argsIntent = getIntent();
         setContentView(R.layout.main);
+        Log.d("🔥", "~~~ R.id: " + R.id);
+        Log.d("🔥", "~~~ R.id.recycler_view: " + R.id.recycler_view);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        Log.d("🔥", "~~~ R.id.btn_back: " + R.id.btn_back);
         findViewById(R.id.btn_back).setOnClickListener(this);
         setTitleBar();
         done = (Button) findViewById(R.id.done);
