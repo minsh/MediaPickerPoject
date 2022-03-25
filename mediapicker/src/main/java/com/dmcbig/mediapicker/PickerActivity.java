@@ -58,7 +58,6 @@ public class PickerActivity extends Activity implements DataCallback, View.OnCli
         super.onCreate(savedInstanceState);
         argsIntent = getIntent();
         setContentView(R.layout.main);
-        Log.d("🔥", "~~~ R.id: " + R.id);
         Log.d("🔥", "~~~ R.id.recycler_view: " + R.id.recycler_view);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         Log.d("🔥", "~~~ R.id.btn_back: " + R.id.btn_back);
