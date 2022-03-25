@@ -58,22 +58,22 @@ public class PickerActivity extends Activity implements DataCallback, View.OnCli
         super.onCreate(savedInstanceState);
         argsIntent = getIntent();
         setContentView(R.layout.main);
-        Log.d("🔥", "~~~ R.id.recycler_view: " + R.id.recycler_view);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        Log.d("🔥", "~~~ recyclerView: " + recyclerView);
-        Log.d("🔥", "~~~ R.id.btn_back: " + R.id.btn_back);
-        findViewById(R.id.btn_back).setOnClickListener(this);
-        setTitleBar();
-        done = (Button) findViewById(R.id.done);
-        category_btn = (Button) findViewById(R.id.category_btn);
-        preview = (Button) findViewById(R.id.preview);
-        done.setOnClickListener(this);
-        category_btn.setOnClickListener(this);
-        preview.setOnClickListener(this);
-        //get view end
-        createAdapter();
-        createFolderAdapter();
-        getMediaData();
+        // Log.d("🔥", "~~~ R.id.recycler_view: " + R.id.recycler_view);
+        // recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        // Log.d("🔥", "~~~ recyclerView: " + recyclerView);
+        // Log.d("🔥", "~~~ R.id.btn_back: " + R.id.btn_back);
+        // findViewById(R.id.btn_back).setOnClickListener(this);
+        // setTitleBar();
+        // done = (Button) findViewById(R.id.done);
+        // category_btn = (Button) findViewById(R.id.category_btn);
+        // preview = (Button) findViewById(R.id.preview);
+        // done.setOnClickListener(this);
+        // category_btn.setOnClickListener(this);
+        // preview.setOnClickListener(this);
+        // //get view end
+        // createAdapter();
+        // createFolderAdapter();
+        // getMediaData();
     }
 
 
